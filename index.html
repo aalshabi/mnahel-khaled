@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>مناحل خالد — عسل طبيعي من جبال جازان</title>
 <meta name="description" content="عسل طبيعي 100% من مناحلنا المتنقلة في جازان. سدر، سمرة، طلح، سلام — من الخلية إلى بيتك بدون وسيط.">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#C8922A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="مناحل خالد">
+<link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-96x96.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -1282,5 +1289,12 @@ a { text-decoration: none; color: inherit; }
 <!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/966566129606?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%B9%D8%B3%D9%84%D9%83%D9%85" class="wa-float" title="تواصل عبر واتساب">💬</a>
 
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
 </body>
 </html>
