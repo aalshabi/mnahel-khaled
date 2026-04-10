@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مناحل خالد — عسل طبيعي من جبال جازان</title>
+<meta name="description" content="عسل طبيعي 100% من مناحلنا المتنقلة في جازان. سدر، سمرة، طلح، سلام — من الخلية إلى بيتك بدون وسيط.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════ */
+/* DESIGN TOKENS                               */
+/* ═══════════════════════════════════════════ */
+:root {
+  --gold: #C8922A;
+  --gold-light: #E8D5A0;
+  --gold-dark: #9A6F1C;
+  --charcoal: #1C1C1E;
+  --charcoal-light: #2A2A2C;
+  --ivory: #F5F0E8;
+  --ivory-dark: #E8E4DE;
+  --amber: #8B5E2B;
+  --olive: #6B7B5E;
+  --white: #FFFFFF;
+  --red-soft: #C43333;
+  --green-soft: #2D7D46;
+  --gray: #9A9590;
+  --font-display: 'Noto Kufi Arabic', sans-serif;
+  --font-body: 'IBM Plex Sans Arabic', sans-serif;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 4px 24px rgba(28,28,30,0.08);
+  --shadow-lg: 0 12px 48px rgba(28,28,30,0.12);
+}
+
+/* ═══════════════════════════════════════════ */
+/* RESET & BASE                                */
+/* ═══════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  background: var(--ivory);
+  color: var(--charcoal);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+
+/* ═══════════════════════════════════════════ */
+/* UTILITY                                     */
+/* ═══════════════════════════════════════════ */
+.container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 80px 0; }
+.section-dark { background: var(--charcoal); color: var(--white); }
+.section-white { background: var(--white); }
+.text-gold { color: var(--gold); }
+.text-gray { color: var(--gray); }
+.text-center { text-align: center; }
+
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 14px; border-radius: 100px;
+  font-size: 0.75rem; font-weight: 600;
+  background: rgba(200,146,42,0.12); color: var(--gold-dark);
+}
+.badge-dark { background: rgba(200,146,42,0.15); color: var(--gold); }
+
+.section-label {
+  font-family: var(--font-display);
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em;
+  color: var(--gold); text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800; line-height: 1.3;
+  margin-bottom: 16px;
+}
+.section-subtitle {
+  font-size: 1.05rem; color: var(--gray);
+  max-width: 600px; line-height: 1.8;
+}
+.section-dark .section-subtitle { color: rgba(255,255,255,0.6); }
+
+/* ═══════════════════════════════════════════ */
+/* BUTTONS                                     */
+/* ═══════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 32px; border-radius: var(--radius-sm);
+  font-family: var(--font-body); font-size: 1rem; font-weight: 600;
+  cursor: pointer; border: none; transition: all 0.3s ease;
+}
+.btn-primary {
+  background: var(--gold); color: var(--charcoal);
+  box-shadow: 0 4px 16px rgba(200,146,42,0.3);
+}
+.btn-primary:hover { background: var(--gold-dark); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(200,146,42,0.4); }
+.btn-secondary {
+  background: transparent; color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.3);
+}
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+.btn-outline {
+  background: transparent; color: var(--gold);
+  border: 1.5px solid var(--gold);
+}
+.btn-outline:hover { background: var(--gold); color: var(--charcoal); }
+.btn-whatsapp {
+  background: #25D366; color: var(--white);
+}
+.btn-whatsapp:hover { background: #1DA851; }
+.btn-sm { padding: 10px 20px; font-size: 0.9rem; }
+.btn-lg { padding: 16px 40px; font-size: 1.1rem; }
+
+/* ═══════════════════════════════════════════ */
+/* TOP BAR                                     */
+/* ═══════════════════════════════════════════ */
+.topbar {
+  background: var(--charcoal);
+  color: rgba(255,255,255,0.7);
+  font-size: 0.8rem;
+  padding: 8px 0;
+  text-align: center;
+}
+.topbar span { margin: 0 12px; }
+.topbar .highlight { color: var(--gold); font-weight: 600; }
+
+/* ═══════════════════════════════════════════ */
+/* TRUST BAR                                   */
+/* ═══════════════════════════════════════════ */
+.trust-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--ivory-dark);
+  padding: 12px 0;
+  position: sticky; top: 0; z-index: 100;
+}
+.trust-bar .container {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+.trust-bar .logo {
+  font-family: var(--font-display);
+  font-size: 1.1rem; font-weight: 800;
+  color: var(--charcoal);
+}
+.trust-bar .logo span { color: var(--gold); }
+.trust-badges {
+  display: flex; gap: 16px; align-items: center;
+  font-size: 0.78rem; color: var(--gray);
+}
+.trust-badges .badge-item {
+  display: flex; align-items: center; gap: 4px;
+}
+.trust-badges .check { color: var(--green-soft); font-weight: 700; }
+.trust-bar .cta-group { display: flex; gap: 8px; }
+
+/* ═══════════════════════════════════════════ */
+/* HERO                                        */
+/* ═══════════════════════════════════════════ */
+.hero {
+  background: var(--charcoal);
+  color: var(--white);
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(200,146,42,0.08) 0%, transparent 60%);
+}
+.hero .container {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+}
+.hero-content { max-width: 540px; }
+.hero-pretitle {
+  font-size: 0.85rem; color: var(--gold);
+  font-weight: 600; margin-bottom: 16px;
+  display: flex; align-items: center; gap: 8px;
+}
+.hero-pretitle::before {
+  content: ''; width: 32px; height: 2px; background: var(--gold);
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 900; line-height: 1.25;
+  margin-bottom: 20px;
+}
+.hero h1 .gold { color: var(--gold); }
+.hero-sub {
+  font-size: 1.1rem; color: rgba(255,255,255,0.65);
+  line-height: 1.8; margin-bottom: 32px;
+}
+.hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+.hero-micro {
+  font-size: 0.78rem; color: rgba(255,255,255,0.4);
+  display: flex; gap: 16px;
+}
+.hero-visual {
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.hero-visual .hex-frame {
+  width: 320px; height: 320px;
+  background: rgba(200,146,42,0.06);
+  border: 1.5px solid rgba(200,146,42,0.15);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.hero-visual .hex-frame::after {
+  content: '';
+  position: absolute; inset: -20px;
+  border: 1px solid rgba(200,146,42,0.06);
+  border-radius: 50%;
+}
+.hero-visual .product-placeholder {
+  text-align: center; color: var(--gold);
+}
+.hero-visual .product-placeholder .icon { font-size: 4rem; margin-bottom: 12px; }
+.hero-visual .product-placeholder p { font-size: 0.8rem; color: var(--gray); }
+.hero-stats {
+  display: flex; gap: 24px; margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.hero-stat .num {
+  font-family: var(--font-display);
+  font-size: 1.4rem; font-weight: 800; color: var(--gold);
+}
+.hero-stat .label { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
+
+/* ═══════════════════════════════════════════ */
+/* VALUE PROPOSITION                           */
+/* ═══════════════════════════════════════════ */
+.value-props {
+  background: var(--white);
+  padding: 60px 0;
+  border-bottom: 1px solid var(--ivory-dark);
+}
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+.value-card {
+  text-align: center; padding: 32px 20px;
+  border-radius: var(--radius);
+  transition: all 0.3s ease;
+}
+.value-card:hover { background: var(--ivory); }
+.value-card .icon {
+  width: 56px; height: 56px;
+  background: rgba(200,146,42,0.08);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 1.4rem;
+}
+.value-card h3 {
+  font-family: var(--font-display);
+  font-size: 1rem; font-weight: 700;
+  margin-bottom: 8px;
+}
+.value-card p { font-size: 0.85rem; color: var(--gray); line-height: 1.7; }
+
+/* ═══════════════════════════════════════════ */
+/* WHY CHOOSE US                               */
+/* ═══════════════════════════════════════════ */
+.why-us .grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+  align-items: start;
+}
+.why-point {
+  display: flex; gap: 16px;
+  padding: 20px; border-radius: var(--radius);
+  background: var(--white);
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+.why-point .num {
+  font-family: var(--font-display);
+  font-size: 1.2rem; font-weight: 900;
+  color: var(--gold); flex-shrink: 0;
+  width: 40px; height: 40px;
+  background: rgba(200,146,42,0.1);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.why-point h4 {
+  font-family: var(--font-display);
+  font-size: 0.95rem; font-weight: 700;
+  margin-bottom: 4px;
+}
+.why-point p { font-size: 0.82rem; color: var(--gray); }
+.why-visual {
+  background: var(--charcoal); border-radius: var(--radius);
+  padding: 48px; text-align: center; color: var(--white);
+  position: sticky; top: 100px;
+}
+.why-visual .big-quote {
+  font-family: var(--font-display);
+  font-size: 1.3rem; font-weight: 700;
+  line-height: 1.6; margin-bottom: 16px;
+}
+.why-visual .big-quote span { color: var(--gold); }
+.why-visual .caption { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+
+/* ═══════════════════════════════════════════ */
+/* HONEY COMPARISON                            */
+/* ═══════════════════════════════════════════ */
+.comparison-section { background: var(--white); }
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.honey-card {
+  border: 1.5px solid var(--ivory-dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: var(--white);
+}
+.honey-card:hover { border-color: var(--gold); box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+.honey-card.featured { border-color: var(--gold); position: relative; }
+.honey-card.featured::before {
+  content: '\0627\0644\0623\0643\062b\0631 \0637\0644\0628\064b\0627';
+  position: absolute; top: 12px; left: 12px;
+  background: var(--gold); color: var(--charcoal);
+  padding: 4px 12px; border-radius: 100px;
+  font-size: 0.7rem; font-weight: 700; z-index: 2;
+}
+.honey-card .card-img {
+  height: 180px;
+  background: var(--ivory);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 3rem;
+}
+.honey-card .card-body { padding: 20px; }
+.honey-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem; font-weight: 800;
+  margin-bottom: 8px;
+}
+.honey-card .desc { font-size: 0.82rem; color: var(--gray); margin-bottom: 12px; line-height: 1.7; }
+.honey-card .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+.honey-card .tag {
+  padding: 4px 10px; border-radius: 100px;
+  font-size: 0.7rem; font-weight: 500;
+  background: var(--ivory); color: var(--amber);
+}
+.honey-card .price-row {
+  display: flex; align-items: baseline; justify-content: space-between;
+}
+.honey-card .price {
+  font-family: var(--font-display);
+  font-size: 1.2rem; font-weight: 800; color: var(--charcoal);
+}
+.honey-card .price .unit { font-size: 0.75rem; font-weight: 400; color: var(--gray); }
+
+/* ═══════════════════════════════════════════ */
+/* BUNDLE OFFER                                */
+/* ═══════════════════════════════════════════ */
+.bundle-section {
+  background: linear-gradient(135deg, var(--charcoal) 0%, var(--charcoal-light) 100%);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.bundle-section::before {
+  content: '';
+  position: absolute; top: -50%; right: -20%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(200,146,42,0.06) 0%, transparent 70%);
+}
+.bundle-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+  align-items: center; position: relative; z-index: 2;
+}
+.bundle-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(200,146,42,0.2);
+  border-radius: var(--radius);
+  padding: 40px;
+}
+.bundle-card .old-price {
+  font-size: 0.9rem; color: var(--gray);
+  text-decoration: line-through; margin-bottom: 4px;
+}
+.bundle-card .new-price {
+  font-family: var(--font-display);
+  font-size: 2.2rem; font-weight: 900;
+  color: var(--gold); margin-bottom: 4px;
+}
+.bundle-card .saving {
+  display: inline-block;
+  background: rgba(45,125,70,0.2); color: #5DC47C;
+  padding: 4px 12px; border-radius: 100px;
+  font-size: 0.78rem; font-weight: 600;
+  margin-bottom: 20px;
+}
+.bundle-items { list-style: none; margin-bottom: 24px; }
+.bundle-items li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size: 0.9rem;
+  display: flex; align-items: center; gap: 8px;
+}
+.bundle-items li::before { content: '\2713'; color: var(--gold); font-weight: 700; }
+
+/* ═══════════════════════════════════════════ */
+/* STORY                                       */
+/* ═══════════════════════════════════════════ */
+.story-section .story-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+  align-items: center;
+}
+.story-visual {
+  background: var(--charcoal); border-radius: var(--radius);
+  padding: 48px; text-align: center;
+  min-height: 360px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.story-visual .icon { font-size: 4rem; margin-bottom: 16px; }
+.story-visual p { font-size: 0.82rem; color: var(--gray); }
+.story-timeline { margin-top: 32px; }
+.timeline-item {
+  display: flex; gap: 16px; margin-bottom: 24px;
+  padding-right: 24px;
+  border-right: 2px solid var(--ivory-dark);
+  position: relative;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute; right: -6px; top: 6px;
+  width: 10px; height: 10px;
+  background: var(--gold); border-radius: 50%;
+}
+.timeline-item h4 {
+  font-family: var(--font-display);
+  font-size: 0.9rem; font-weight: 700;
+  margin-bottom: 4px;
+}
+.timeline-item p { font-size: 0.82rem; color: var(--gray); line-height: 1.7; }
+
+/* ═══════════════════════════════════════════ */
+/* TRUST / QUALITY                             */
+/* ═══════════════════════════════════════════ */
+.quality-section { background: var(--ivory); }
+.quality-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.quality-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px;
+  border: 1px solid var(--ivory-dark);
+  text-align: center;
+}
+.quality-card .icon {
+  width: 64px; height: 64px;
+  background: rgba(200,146,42,0.08);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px; font-size: 1.6rem;
+}
+.quality-card h4 {
+  font-family: var(--font-display);
+  font-size: 1rem; font-weight: 700;
+  margin-bottom: 8px;
+}
+.quality-card p { font-size: 0.82rem; color: var(--gray); line-height: 1.7; }
+
+/* ═══════════════════════════════════════════ */
+/* REVIEWS                                     */
+/* ═══════════════════════════════════════════ */
+.reviews-section { background: var(--white); }
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.review-card {
+  border: 1px solid var(--ivory-dark);
+  border-radius: var(--radius);
+  padding: 28px;
+  background: var(--ivory);
+}
+.review-card .stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 12px; letter-spacing: 2px; }
+.review-card .text {
+  font-size: 0.9rem; line-height: 1.8;
+  margin-bottom: 16px; color: var(--charcoal);
+}
+.review-card .author {
+  font-size: 0.78rem; color: var(--gray);
+  display: flex; align-items: center; gap: 8px;
+}
+.review-card .author .name { font-weight: 600; color: var(--charcoal); }
+.review-card .verified {
+  font-size: 0.68rem; color: var(--green-soft);
+  background: rgba(45,125,70,0.08);
+  padding: 2px 8px; border-radius: 100px;
+}
+
+/* ═══════════════════════════════════════════ */
+/* GIFT SECTION                                */
+/* ═══════════════════════════════════════════ */
+.gift-section {
+  background: linear-gradient(135deg, #1C1C1E 0%, #2C2420 100%);
+  color: var(--white);
+}
+.gift-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 48px; align-items: center;
+}
+.gift-visual {
+  background: rgba(200,146,42,0.05);
+  border: 1px solid rgba(200,146,42,0.15);
+  border-radius: var(--radius);
+  padding: 48px; text-align: center;
+  min-height: 300px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.gift-visual .icon { font-size: 4rem; margin-bottom: 12px; }
+.gift-features {
+  list-style: none; margin: 24px 0;
+}
+.gift-features li {
+  padding: 10px 0; font-size: 0.9rem;
+  display: flex; align-items: center; gap: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ═══════════════════════════════════════════ */
+/* FAQ                                         */
+/* ═══════════════════════════════════════════ */
+.faq-section { background: var(--ivory); }
+.faq-grid {
+  max-width: 720px; margin: 0 auto;
+}
+.faq-item {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+  overflow: hidden;
+  border: 1px solid var(--ivory-dark);
+}
+.faq-item summary {
+  padding: 20px 24px;
+  font-family: var(--font-display);
+  font-size: 0.95rem; font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.faq-item summary::after { content: '+'; color: var(--gold); font-size: 1.2rem; font-weight: 300; }
+.faq-item[open] summary::after { content: '\2212'; }
+.faq-item .answer {
+  padding: 0 24px 20px;
+  font-size: 0.88rem; color: var(--gray); line-height: 1.8;
+}
+
+/* ═══════════════════════════════════════════ */
+/* FINAL CTA                                   */
+/* ═══════════════════════════════════════════ */
+.final-cta {
+  background: var(--charcoal);
+  color: var(--white);
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at center, rgba(200,146,42,0.06) 0%, transparent 60%);
+}
+.final-cta .container { position: relative; z-index: 2; }
+.final-cta h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 900; margin-bottom: 16px;
+}
+.final-cta .sub { color: rgba(255,255,255,0.5); margin-bottom: 32px; font-size: 1.05rem; }
+.final-cta .ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+.final-cta .micro { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+
+/* ═══════════════════════════════════════════ */
+/* FOOTER                                      */
+/* ═══════════════════════════════════════════ */
+.footer {
+  background: #111; color: rgba(255,255,255,0.4);
+  padding: 40px 0 24px;
+  font-size: 0.8rem;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px; margin-bottom: 32px;
+}
+.footer h4 {
+  font-family: var(--font-display);
+  font-size: 0.9rem; font-weight: 700;
+  color: var(--white); margin-bottom: 16px;
+}
+.footer a { color: rgba(255,255,255,0.4); transition: color 0.2s; }
+.footer a:hover { color: var(--gold); }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 8px; }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 20px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px;
+}
+
+/* ═══════════════════════════════════════════ */
+/* WHATSAPP FLOAT                              */
+/* ═══════════════════════════════════════════ */
+.wa-float {
+  position: fixed; bottom: 24px; left: 24px;
+  background: #25D366; color: var(--white);
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.6rem;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+  z-index: 999;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+.wa-float:hover { transform: scale(1.1); }
+
+/* ═══════════════════════════════════════════ */
+/* ANIMATIONS                                  */
+/* ═══════════════════════════════════════════ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate { animation: fadeUp 0.6s ease forwards; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+/* ═══════════════════════════════════════════ */
+/* RESPONSIVE                                  */
+/* ═══════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .hero .container { grid-template-columns: 1fr; text-align: center; }
+  .hero-content { max-width: 100%; }
+  .hero-pretitle { justify-content: center; }
+  .hero-ctas { justify-content: center; }
+  .hero-micro { justify-content: center; }
+  .hero-visual { display: none; }
+  .hero-stats { justify-content: center; }
+  .why-us .grid { grid-template-columns: 1fr; }
+  .bundle-grid { grid-template-columns: 1fr; }
+  .story-section .story-grid { grid-template-columns: 1fr; }
+  .gift-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .trust-badges { display: none; }
+  .trust-bar .container { justify-content: space-between; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .btn-lg { padding: 14px 28px; font-size: 1rem; }
+  .section { padding: 60px 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>🚚 <span class="highlight">شحن مجاني</span> للطلبات أكثر من 200 ريال</span>
+  <span>|</span>
+  <span>📞 اطلب عبر واتساب: <span class="highlight">0566129606</span></span>
+</div>
+
+<!-- TRUST BAR (Sticky) -->
+<nav class="trust-bar">
+  <div class="container">
+    <div class="logo">مناحل <span>خالد</span></div>
+    <div class="trust-badges">
+      <span class="badge-item"><span class="check">✓</span> مسجل في معروف</span>
+      <span class="badge-item"><span class="check">✓</span> ضمان جودة 100%</span>
+      <span class="badge-item"><span class="check">✓</span> شحن سريع لكل المناطق</span>
+      <span class="badge-item"><span class="check">✓</span> دفع آمن</span>
+    </div>
+    <div class="cta-group">
+      <a href="reviews.html" style="font-size: 0.85rem; font-weight: 600; color: var(--gold); padding: 10px;">قالوا عنا</a>
+      <a href="https://salla.sa/mnahel.khaled" class="btn btn-primary btn-sm">اطلب الآن</a>
+      <a href="https://wa.me/966566129606" class="btn btn-whatsapp btn-sm">💬 واتساب</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-pretitle">من مناحلنا المتنقلة في جازان</div>
+      <h1>
+        عسل <span class="gold">طبيعي 100%</span>
+        <br>من الخلية إلى بيتك
+        <br>بدون وسيط
+      </h1>
+      <p class="hero-sub">
+        نتتبع مواسم التزهير في جبال جازان — سدر، سمرة، طلح، سلام — لنقدم لك عسلاً نقطفه بأيدينا ونضمن جودته قبل أن يصل لعتبة بابك.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://salla.sa/mnahel.khaled" class="btn btn-primary btn-lg">🍯 تسوّق الآن</a>
+        <a href="#bundle" class="btn btn-secondary btn-lg">باقة التذوق — 3 أنواع</a>
+      </div>
+      <div class="hero-micro">
+        <span>🚚 شحن مجاني +200 ر.س</span>
+        <span>🔄 استرجاع خلال 7 أيام</span>
+        <span>⚡ توصيل 2-4 أيام</span>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num">4.6 ⭐</div>
+          <div class="label">تقييم Google Maps</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">65+</div>
+          <div class="label">تقييم عميل</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">4</div>
+          <div class="label">أنواع عسل طبيعي</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">100%</div>
+          <div class="label">من مناحلنا</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hex-frame">
+        <div class="product-placeholder">
+          <div class="icon">🍯</div>
+          <p>[ صورة عبوة العسل الرئيسية ]<br>تصوير احترافي على خلفية داكنة</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. VALUE PROPOSITION -->
+<section class="value-props">
+  <div class="container">
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="icon">🏔️</div>
+        <h3>من جبال جازان</h3>
+        <p>مناحلنا في صامطة وجازان — قلب إنتاج العسل السعودي. ليس عسل مستورد ولا معبّأ من مصادر مجهولة.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">🐝</div>
+        <h3>مناحل متنقلة</h3>
+        <p>ننقل مناحلنا حسب مواسم التزهير. كل نوع عسل يأتي في موسمه الطبيعي — لا تسريع ولا تغذية صناعية.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">✋</div>
+        <h3>نقطفه بأيدينا</h3>
+        <p>من الإنتاج إلى التعبئة — كل شيء تحت إشرافنا المباشر. لا وسطاء، لا خلط، لا إضافات.</p>
+      </div>
+      <div class="value-card">
+        <div class="icon">📦</div>
+        <h3>من المنحل لبابك</h3>
+        <p>نشحن مباشرة لكل مناطق المملكة. عبوات محكمة الإغلاق تحافظ على الجودة أثناء النقل.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. WHY CHOOSE US -->
+<section class="section why-us" id="why">
+  <div class="container">
+    <div class="section-label">لماذا مناحل خالد؟</div>
+    <div class="section-title">ليس كل عسل طبيعي — وليس كل بائع نحّال</div>
+    <p class="section-subtitle" style="margin-bottom: 40px;">الفرق بيننا وبين المتاجر الأخرى: نحن نملك المناحل ونقطف العسل ونعبّئه ونوصله. سلسلة واحدة بدون أي تدخل خارجي.</p>
+    <div class="grid">
+      <div>
+        <div class="why-point">
+          <div class="num">١</div>
+          <div>
+            <h4>ملكية كاملة للمناحل</h4>
+            <p>لا نشتري عسل من موردين. كل قطرة من إنتاجنا المباشر في جازان.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="num">٢</div>
+          <div>
+            <h4>متنقلون مع المواسم</h4>
+            <p>ننتقل مع مواسم التزهير — السدر شتاءً، الطلح صيفًا — لضمان أعلى جودة طبيعية.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="num">٣</div>
+          <div>
+            <h4>بدون خلط أو إضافات</h4>
+            <p>عسل صافي 100%. لا سكر مضاف، لا نكهات صناعية، لا تسخين يفقد الفائدة.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="num">٤</div>
+          <div>
+            <h4>ضمان جودة مكتوب</h4>
+            <p>إذا لم تكن راضيًا عن الجودة — نسترجع المبلغ كاملاً. ثقتنا في منتجنا مطلقة.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="num">٥</div>
+          <div>
+            <h4>شفافية كاملة</h4>
+            <p>نوثّق رحلة العسل من المنحل إلى العبوة عبر محتوانا. شاهد مناحلنا الحقيقية.</p>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <p style="font-size:3rem; margin-bottom: 20px;">🏔️</p>
+        <div class="big-quote">
+          "في سوق يعاني من <span>غش العسل</span>، الشفافية هي أقوى ميزة تنافسية"
+        </div>
+        <p class="caption">
+          [ مكان صورة/فيديو حقيقي من المناحل ]<br>
+          فيديو قصير يُظهر عملية القطف
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. HONEY TYPES -->
+<section class="section comparison-section" id="products">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 48px;">
+      <div class="section-label">أنواع العسل</div>
+      <div class="section-title">اختر النوع المناسب لك</div>
+      <p class="section-subtitle" style="margin: 0 auto;">كل نوع من عسلنا يأتي من موسم تزهير مختلف — لكل واحد طعمه ولونه وفوائده المميزة.</p>
+    </div>
+    <div class="comparison-grid">
+      <div class="honey-card featured">
+        <div class="card-img">🌳</div>
+        <div class="card-body">
+          <h3>عسل السدر</h3>
+          <p class="desc">أجود أنواع العسل السعودي. يُقطف شتاءً من أشجار السدر في جازان. طعم غني، لون داكن، وفوائد استثنائية.</p>
+          <div class="tags">
+            <span class="tag">موسم الشتاء</span>
+            <span class="tag">مقوّي للمناعة</span>
+            <span class="tag">الأكثر طلبًا</span>
+          </div>
+          <div class="price-row">
+            <div class="price">220 ر.س <span class="unit">/ كيلو</span></div>
+            <a href="https://salla.sa/mnahel.khaled" class="btn btn-primary btn-sm">أضف للسلة</a>
+          </div>
+        </div>
+      </div>
+      <div class="honey-card">
+        <div class="card-img">🌿</div>
+        <div class="card-body">
+          <h3>عسل السمرة</h3>
+          <p class="desc">عسل خفيف بطعم مميز من أشجار السمر. مناسب للاستخدام اليومي وللأطفال فوق السنة.</p>
+          <div class="tags">
+            <span class="tag">موسم الربيع</span>
+            <span class="tag">خفيف ولذيذ</span>
+            <span class="tag">للعائلة</span>
+          </div>
+          <div class="price-row">
+            <div class="price">150 ر.س <span class="unit">/ كيلو</span></div>
+            <a href="https://salla.sa/mnahel.khaled" class="btn btn-outline btn-sm">أضف للسلة</a>
+          </div>
+        </div>
+      </div>
+      <div class="honey-card">
+        <div class="card-img">🌾</div>
+        <div class="card-body">
+          <h3>عسل الطلح</h3>
+          <p class="desc">عسل قوي النكهة من أشجار الطلح. يتميز بلونه الفاتح وقوامه المتوسط. مفيد للجهاز الهضمي.</p>
+          <div class="tags">
+            <span class="tag">موسم الصيف</span>
+            <span class="tag">مفيد للمعدة</span>
+            <span class="tag">نكهة قوية</span>
+          </div>
+          <div class="price-row">
+            <div class="price">140 ر.س <span class="unit">/ كيلو</span></div>
+            <a href="https://salla.sa/mnahel.khaled" class="btn btn-outline btn-sm">أضف للسلة</a>
+          </div>
+        </div>
+      </div>
+      <div class="honey-card">
+        <div class="card-img">🌸</div>
+        <div class="card-body">
+          <h3>عسل السلام</h3>
+          <p class="desc">عسل نادر من أشجار السلام البرية. محدود الكمية، يُقطف مرة واحدة في السنة.</p>
+          <div class="tags">
+            <span class="tag">إنتاج محدود</span>
+            <span class="tag">نادر</span>
+            <span class="tag">للخبراء</span>
+          </div>
+          <div class="price-row">
+            <div class="price">180 ر.س <span class="unit">/ كيلو</span></div>
+            <a href="https://salla.sa/mnahel.khaled" class="btn btn-outline btn-sm">أضف للسلة</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. BUNDLE OFFER -->
+<section class="section bundle-section" id="bundle">
+  <div class="container">
+    <div class="bundle-grid">
+      <div>
+        <span class="badge badge-dark">🔥 العرض الأكثر مبيعًا</span>
+        <h2 class="section-title" style="color: var(--white); margin-top: 16px;">باقة التذوق<br><span class="text-gold">3 أنواع عسل بسعر خاص</span></h2>
+        <p class="section-subtitle">جرّب 3 أنواع مختلفة من عسلنا قبل أن تختار المفضل. الطريقة المثالية لتجربتك الأولى معنا.</p>
+      </div>
+      <div class="bundle-card">
+        <div class="old-price">470 ر.س</div>
+        <div class="new-price">349 ر.س</div>
+        <div class="saving">وفّر 121 ر.س (26% خصم)</div>
+        <ul class="bundle-items">
+          <li>عسل سدر — 250 جم</li>
+          <li>عسل سمرة — 250 جم</li>
+          <li>عسل طلح — 250 جم</li>
+          <li>شحن مجاني لكل المناطق</li>
+          <li>تغليف هدايا مجاني</li>
+        </ul>
+        <a href="https://salla.sa/mnahel.khaled" class="btn btn-primary btn-lg" style="width: 100%;">اطلب باقة التذوق الآن</a>
+        <p style="text-align: center; font-size: 0.75rem; color: var(--gray); margin-top: 12px;">
+          ⚡ 23 شخص طلبوا هذا الأسبوع — الكمية محدودة
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. BRAND STORY -->
+<section class="section story-section" id="story">
+  <div class="container">
+    <div class="story-grid">
+      <div>
+        <div class="section-label">قصتنا</div>
+        <div class="section-title">من جبال جازان إلى طاولتك</div>
+        <p class="section-subtitle" style="margin-bottom: 32px;">
+          مناحل خالد ليست متجرًا إلكترونيًا فقط — نحن نحّالون نملك مناحلنا ونعمل بأيدينا. بدأنا في صامطة بعدد محدود من الخلايا، واليوم نتنقل مع مواسم التزهير عبر جبال جازان لنقدم عسلاً بأعلى جودة.
+        </p>
+        <div class="story-timeline">
+          <div class="timeline-item">
+            <div>
+              <h4>مناحل متنقلة حسب الموسم</h4>
+              <p>نتتبع مواسم تزهير السدر والسمرة والطلح والسلام. لا نبقى في مكان واحد — ننتقل حيث تكون الطبيعة في أوج عطائها.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div>
+              <h4>قطف يدوي بعناية</h4>
+              <p>لا آلات صناعية. نقطف بأيدينا بالطريقة التقليدية التي تحافظ على كل خصائص العسل الطبيعي.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div>
+              <h4>تعبئة فورية</h4>
+              <p>نعبّئ العسل مباشرة بعد القطف — لا تخزين طويل، لا نقل بين مستودعات، لا فرصة للتلاعب.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div>
+              <h4>توصيل مباشر</h4>
+              <p>من المنحل إلى بابك عبر شركات شحن معتمدة. عبوات محكمة مع ضمان وصول سليم.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="story-visual">
+        <div class="icon">🐝</div>
+        <p style="color: var(--gold); font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; margin-bottom: 12px;">
+          من المنحل إلى العبوة
+        </p>
+        <p>[ مكان فيديو/صور حقيقية من المناحل في جازان ]</p>
+        <p style="margin-top: 20px; font-size: 0.78rem;">
+          📍 صامطة، منطقة جازان<br>
+          نوثّق كل موسم على حسابنا في تيك توك وإنستغرام
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. QUALITY / TRUST -->
+<section class="section quality-section" id="quality">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 48px;">
+      <div class="section-label">ضمان الجودة</div>
+      <div class="section-title">كيف نضمن لك عسل أصلي 100%؟</div>
+      <p class="section-subtitle" style="margin: 0 auto;">في سوق يعاني من الغش — نقدم لك ضمانات حقيقية وليست شعارات فارغة.</p>
+    </div>
+    <div class="quality-grid">
+      <div class="quality-card">
+        <div class="icon">🔬</div>
+        <h4>فحص مخبري معتمد</h4>
+        <p>كل دفعة إنتاج تخضع لفحص مختبر معتمد. شهادات الفحص متاحة عند الطلب — نثبت الجودة بالأرقام.</p>
+      </div>
+      <div class="quality-card">
+        <div class="icon">🛡️</div>
+        <h4>ضمان الاسترجاع الكامل</h4>
+        <p>إذا لم تكن راضيًا — استرجع المبلغ كاملاً خلال 7 أيام. بدون أسئلة، بدون تعقيد.</p>
+      </div>
+      <div class="quality-card">
+        <div class="icon">📋</div>
+        <h4>مسجل في معروف</h4>
+        <p>المتجر مسجّل رسميًا في منصة معروف التابعة لوزارة التجارة. رقم السجل متاح للتحقق.</p>
+      </div>
+      <div class="quality-card">
+        <div class="icon">📍</div>
+        <h4>مصدر واضح ومعروف</h4>
+        <p>نقول لك بالضبط من أين جاء العسل — المنطقة، الموسم، ونوع الشجر. لا مصادر مجهولة.</p>
+      </div>
+      <div class="quality-card">
+        <div class="icon">🎥</div>
+        <h4>توثيق مرئي</h4>
+        <p>نوثّق رحلة الإنتاج على حساباتنا. شاهد المناحل والقطف والتعبئة بنفسك.</p>
+      </div>
+      <div class="quality-card">
+        <div class="icon">💬</div>
+        <h4>تواصل مباشر مع النحّال</h4>
+        <p>تتحدث مباشرة مع صاحب المناحل عبر واتساب. ليس مع موظف خدمة عملاء — مع النحّال نفسه.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. REVIEWS -->
+<section class="section reviews-section" id="reviews">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 48px;">
+      <div class="section-label">آراء العملاء</div>
+      <div class="section-title">تقييم 4.6 من 5 — من 65 عميل على Google Maps</div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text">"قبل اقول إن العسل جودة وما عليها كلام. ابغى اشكر في البداية الاستاذ خالد صاحب الابتسامة الدايمه الله لايغير عليه. بحكم خبرتي المتواضعه في أنواع وجودة العسل المهم في شراء العسل هو انك تجد النحال الثقة وهذا والله وجدتة عند مناحل خالد."</p>
+        <div class="author">
+          <span class="name">Ahmad Al Shahrani</span>
+          <span>— تقييم Google Maps</span>
+          <span class="verified">✓ مشتري موثّق</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text">"للأمانه اخلاق وكرم الاستاذ خالد يفوق الوصف ويعجز اللسان عن التعبير ويوجد عنده جميع انواع العسل وكذلك يمتعك بمعلومات من شخص صدوق واستفدنا منه الكثير. الله يبارك لكم استاذنا الغالي ويرزقكم من حيث لاتحتسبون."</p>
+        <div class="author">
+          <span class="name">علي المباركي</span>
+          <span>— تقييم Google Maps</span>
+          <span class="verified">✓ مشتري موثّق</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text">"من أفضل واصدق النحالين في المنطقة بشهادة اغلب العملاء صاحب خبرة واسعة في مجاله يدير منحله بنفسه الله يوفقك استاذ خالد."</p>
+        <div class="author">
+          <span class="name">mostafa alawi</span>
+          <span>— تقييم Google Maps</span>
+          <span class="verified">✓ مشتري موثّق</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text">"موقع ممتاز ويتوفر جميع انواع العسل بضمان المالك الأستاذ خالد الشعبي صاحب مناحل خالد للعسل. موقع مناحل خالد فى محافظة صامطه بجازان."</p>
+        <div class="author">
+          <span class="name">سليمان شيبه</span>
+          <span>— تقييم Google Maps</span>
+          <span class="verified">✓ مشتري موثّق</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text">"عنده نوعيات كثيرة من العسل وذات جودة عالية متجر متميز جدا."</p>
+        <div class="author">
+          <span class="name">محمد الأسود</span>
+          <span>— تقييم Google Maps</span>
+          <span class="verified">✓ مشتري موثّق</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text">"معروفين بالجود والأمانة. بعض العسل يأتي خفيف شيئا ما خصوصا سلام المناطق القريبة من البحر وهذا طبيعي بسبب عنصر رطوبة العسل ومواضع المناحل بين تهامة والجبل."</p>
+        <div class="author">
+          <span class="name">Toot Ss</span>
+          <span>— تقييم Google Maps</span>
+          <span class="verified">✓ مشتري موثّق</span>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 32px;">
+      <p class="text-gray" style="font-size: 0.82rem;">
+        ⭐ 52 عميل أعطونا 5 نجوم على Google Maps — <a href="reviews.html" style="color: var(--gold); font-weight: 600;">شاهد كل التقييمات ←</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 9. GIFT SECTION -->
+<section class="section gift-section" id="gift">
+  <div class="container">
+    <div class="gift-grid">
+      <div>
+        <span class="badge badge-dark">🎁 هدايا</span>
+        <h2 class="section-title" style="color: var(--white); margin-top: 16px;">صندوق العسل الفاخر<br><span class="text-gold">الهدية المثالية</span></h2>
+        <p style="color: rgba(255,255,255,0.6); margin-bottom: 24px; line-height: 1.8;">
+          هدية تليق بمن تحب — صندوق أنيق يحتوي على أجود أنواع العسل مع ملحقات مميزة. مناسب للمناسبات، الأعياد، والإهداء للأقارب والشركاء.
+        </p>
+        <ul class="gift-features">
+          <li>3 عبوات عسل فاخرة (سدر + سمرة + طلح)</li>
+          <li>ملعقة عسل خشبية طبيعية</li>
+          <li>قطعة شمع عسل طبيعي</li>
+          <li>تغليف هدايا فاخر مع بطاقة إهداء</li>
+          <li>شحن مجاني + تغليف مضاعف للحماية</li>
+        </ul>
+        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 20px;">
+          <span style="font-family: var(--font-display); font-size: 2rem; font-weight: 900; color: var(--gold);">449 ر.س</span>
+          <span style="font-size: 0.85rem; color: var(--gray); text-decoration: line-through;">580 ر.س</span>
+        </div>
+        <a href="https://wa.me/966566129606?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%B5%D9%86%D8%AF%D9%88%D9%82%20%D8%A7%D9%84%D9%87%D8%AF%D8%A7%D9%8A%D8%A7" class="btn btn-primary btn-lg">اطلب صندوق الهدايا</a>
+      </div>
+      <div class="gift-visual">
+        <div class="icon">🎁</div>
+        <p style="color: var(--gold); font-family: var(--font-display); font-weight: 700;">صندوق العسل الفاخر</p>
+        <p style="font-size: 0.8rem; color: var(--gray); margin-top: 8px;">[ صورة الصندوق مع المحتويات ]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. FAQ -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 48px;">
+      <div class="section-label">أسئلة شائعة</div>
+      <div class="section-title">عندك سؤال؟</div>
+    </div>
+    <div class="faq-grid">
+      <details class="faq-item">
+        <summary>كيف أعرف إن العسل أصلي وليس مغشوش؟</summary>
+        <div class="answer">كل دفعة إنتاج تخضع لفحص مختبر معتمد. نوفر شهادات الفحص عند الطلب. بالإضافة لذلك، نوثّق رحلة الإنتاج كاملة على حساباتنا في السوشال ميديا — من المنحل إلى العبوة.</div>
+      </details>
+      <details class="faq-item">
+        <summary>ما الفرق بين أنواع العسل عندكم؟</summary>
+        <div class="answer">كل نوع يأتي من شجر مختلف وموسم مختلف. السدر هو الأغنى والأغلى (شتاء). السمرة خفيف ومناسب للاستخدام اليومي (ربيع). الطلح قوي النكهة ومفيد للهضم (صيف). السلام نادر ومحدود الكمية.</div>
+      </details>
+      <details class="faq-item">
+        <summary>كم مدة التوصيل؟</summary>
+        <div class="answer">2-4 أيام عمل لمعظم مناطق المملكة. المدن الرئيسية (الرياض، جدة، الدمام) عادةً خلال 2-3 أيام. المناطق النائية قد تحتاج يومين إضافيين.</div>
+      </details>
+      <details class="faq-item">
+        <summary>هل يوجد شحن مجاني؟</summary>
+        <div class="answer">نعم. الشحن مجاني لكل الطلبات التي تزيد عن 200 ريال. الطلبات الأقل تتحمل رسوم شحن ثابتة 25 ريال.</div>
+      </details>
+      <details class="faq-item">
+        <summary>ماذا لو لم أكن راضيًا عن المنتج؟</summary>
+        <div class="answer">لديك 7 أيام للاسترجاع الكامل. إذا وصلك المنتج تالفًا أو لم يعجبك — تواصل معنا عبر واتساب ونسترجع المبلغ كاملاً بدون أسئلة.</div>
+      </details>
+      <details class="faq-item">
+        <summary>هل يمكنني طلب كمية كبيرة أو بالجملة؟</summary>
+        <div class="answer">نعم. نوفر أسعار خاصة للطلبات بالجملة (أكثر من 10 كيلو). تواصل معنا عبر واتساب لعرض سعر مخصص.</div>
+      </details>
+      <details class="faq-item">
+        <summary>هل العسل مناسب لمرضى السكري؟</summary>
+        <div class="answer">العسل الطبيعي يحتوي على سكريات طبيعية. ننصح مرضى السكري بمراجعة طبيبهم المختص قبل الاستخدام المنتظم. العسل ليس بديلاً عن الاستشارة الطبية.</div>
+      </details>
+      <details class="faq-item">
+        <summary>كيف أتواصل معكم؟</summary>
+        <div class="answer">أسهل طريقة: واتساب على الرقم 0566129606. نرد خلال ساعة في أوقات العمل (9 صباحًا - 10 مساءً). يمكنك أيضًا مراسلتنا عبر إنستغرام أو عبر المتجر مباشرة.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 11. FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="section-label" style="color: var(--gold);">جاهز تجرّب؟</div>
+    <h2>عسل <span class="text-gold">طبيعي 100%</span> من مناحلنا في جازان<br>جرّبه اليوم</h2>
+    <p class="sub">من الخلية إلى بيتك — بدون وسيط، بدون خلط، بضمان كامل</p>
+    <div class="ctas">
+      <a href="https://salla.sa/mnahel.khaled" class="btn btn-primary btn-lg">🍯 تسوّق الآن</a>
+      <a href="#bundle" class="btn btn-outline btn-lg" style="border-color: var(--gold);">باقة التذوق — 349 ر.س</a>
+      <a href="https://wa.me/966566129606" class="btn btn-whatsapp btn-lg">💬 اطلب عبر واتساب</a>
+    </div>
+    <p class="micro">🚚 شحن مجاني +200 ر.س &nbsp;|&nbsp; 🔄 ضمان استرجاع 7 أيام &nbsp;|&nbsp; ✓ مسجل في معروف</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>مناحل خالد للعسل</h4>
+        <p style="margin-bottom: 16px; line-height: 1.8;">مؤسسة سعودية متخصصة في إنتاج العسل الطبيعي من مناحل متنقلة في منطقة جازان. نقطفه بأيدينا ونوصله لكل مناطق المملكة.</p>
+        <p>📍 صامطة، منطقة جازان</p>
+        <p>📞 0566129606</p>
+      </div>
+      <div>
+        <h4>روابط مهمة</h4>
+        <ul class="footer-links">
+          <li><a href="#products">المنتجات</a></li>
+          <li><a href="#bundle">العروض والباقات</a></li>
+          <li><a href="#story">قصتنا</a></li>
+          <li><a href="#quality">ضمان الجودة</a></li>
+          <li><a href="reviews.html">قالوا عنا</a></li>
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>السياسات</h4>
+        <ul class="footer-links">
+          <li><a href="#">سياسة الاسترجاع</a></li>
+          <li><a href="#">سياسة الشحن</a></li>
+          <li><a href="#">سياسة الخصوصية</a></li>
+          <li><a href="#">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 مناحل خالد للعسل — جميع الحقوق محفوظة</p>
+      <div style="display: flex; gap: 16px;">
+        <a href="https://www.instagram.com/manahelalshaabi">إنستغرام</a>
+        <a href="#">تيك توك</a>
+        <a href="https://www.snapchat.com/add/manahelalshaabi">سناب شات</a>
+        <a href="https://www.facebook.com/profile.php?id=100064639077001">فيسبوك</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/966566129606?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%B9%D8%B3%D9%84%D9%83%D9%85" class="wa-float" title="تواصل عبر واتساب">💬</a>
+
+</body>
+</html>
